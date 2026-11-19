@@ -1,11 +1,236 @@
-html, body {
+
+body {
+    background: #f5f6f8;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: 800;
+    color: #222;
+    margin: 0;
+}
+
+.logo span {
+    color: #00a046;
+}
+
+.search {
+    width: 100%;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search:focus {
+    border-color: #00a046;
+}
+
+.header-icon {
+    font-size: 23px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Navigation */
+.navigation {
+    background: #00a046;
+    padding: 13px 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #d9ffe8;
+}
+
+/* Hero */
+.hero {
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Sections */
+.section {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.section-title {
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+/* Categories */
+.category-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 18px #00000012;
+}
+
+.category-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.category-card h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Products */
+.product-card {
     height: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.2s;
 }
 
-body{
-    background-color: bisque;
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 18px #00000015;
 }
 
-img{
-    max-width: 100%;
+.product-image {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f8fa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product-category {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.product-card h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.rating {
+    color: #ffb400;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 19px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.buy-button {
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    background: #00a046;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.buy-button:hover {
+    background: #007d36;
+}
+
+/* Footer */
+.footer {
+    background: #202820;
+    color: white;
+    text-align: center;
+    padding: 35px 0 20px;
+}
+
+.footer h3 {
+    font-weight: 800;
+}
+
+.footer p {
+    color: #c5c5c5;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .nav-links {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .category-card img {
+        height: 100px;
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+
+    .product-image {
+        height: 110px;
+    }
+
+    .product-card h5 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
 }

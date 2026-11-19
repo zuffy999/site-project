@@ -1,28 +1,163 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechMarket — інтернет-магазин</title>
+
     <link rel="icon" type="image/x-icon" href="./static/images/icons8-земной-шар-94.ico">
     <link rel="stylesheet" href="./static/styles/reset.css">
     <link rel="stylesheet" href="./static/lib/bootstrap-5.3.9-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/styles/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="rov">
-            <div class="col-2">
 
-            </div>
-            <div class="col-10">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col-lg-2 col-6">
+                    <h2 class="logo">Tech<span>Market</span></h2>
+                </div>
 
-            </div>
-            <div class="col-2">
+                <div class="col-lg-7 col-12 order-lg-2 order-3 mt-3 mt-lg-0">
+                    <input type="text" class="search" placeholder="Я шукаю...">
+                </div>
 
+                <div class="col-lg-3 col-6 text-end order-lg-3 order-2">
+                    <span class="header-icon">♡</span>
+                    <span class="header-icon">🛒</span>
+                    <span class="header-icon">👤</span>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-links">
+                <a href="#">Каталог товарів</a>
+                <a href="#">Акції</a>
+                <a href="#">Доставка</a>
+                <a href="#">Контакти</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <!-- Hero -->
+        <section class="hero mt-4">
+            <img src="./static/images/banner.png" alt="TechMarket — рекламний банер">
+        </section>
+
+        <!-- Categories -->
+        <section class="section">
+            <h2 class="section-title">Популярні категорії</h2>
+
+            <div class="row g-3">
+                <div class="col-lg-3 col-6">
+                    <div class="category-card">
+                        <img src="./static/images/smartphone.jpeg" alt="Смартфони">
+                        <h5>Смартфони</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="category-card">
+                        <img src="./static/images/laptop.jpg" alt="Ноутбуки">
+                        <h5>Ноутбуки</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="category-card">
+                        <img src="./static/images/headphones.jpg" alt="Навушники">
+                        <h5>Аксесуари</h5>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="category-card">
+                        <img src="./static/images/gaming.jpg" alt="Ігрова техніка">
+                        <h5>Ігрова техніка</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="section" id="products">
+            <h2 class="section-title">Популярні товари</h2>
+
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./static/images/smartphone.jpeg" alt="Смартфон">
+                        </div>
+                        <p class="product-category">Смартфони</p>
+                        <h5>Smartphone X Pro</h5>
+                        <div class="rating">★★★★★</div>
+                        <p class="price">24 999 ₴</p>
+                        <button class="buy-button">До кошика</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./static/images/laptop.jpg" alt="Ноутбук">
+                        </div>
+                        <p class="product-category">Ноутбуки</p>
+                        <h5>UltraBook 15</h5>
+                        <div class="rating">★★★★★</div>
+                        <p class="price">32 499 ₴</p>
+                        <button class="buy-button">До кошика</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./static/images/headphones.jpg" alt="Навушники">
+                        </div>
+                        <p class="product-category">Аксесуари</p>
+                        <h5>Wireless Headphones</h5>
+                        <div class="rating">★★★★☆</div>
+                        <p class="price">3 299 ₴</p>
+                        <button class="buy-button">До кошика</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./static/images/smartwatch.jpg" alt="Смартгодинник">
+                        </div>
+                        <p class="product-category">Гаджети</p>
+                        <h5>Smart Watch 5</h5>
+                        <div class="rating">★★★★★</div>
+                        <p class="price">4 799 ₴</p>
+                        <button class="buy-button">До кошика</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>TechMarket</h3>
+            <p>Твій простір сучасних технологій</p>
+            <p class="copyright">© 2026 TechMarket. Усі права захищені.</p>
+        </div>
+    </footer>
+
     <script src="./static/lib/jquery-4.1.0.min.js"></script>
     <script src="./static/lib/bootstrap-5.3.9-dist/js/bootstrap.min.js"></script>
 </body>
